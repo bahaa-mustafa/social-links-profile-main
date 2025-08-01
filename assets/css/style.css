@@ -119,13 +119,24 @@ a {
     font-size: 11px;
     text-align: center;
     color: var(--white-color);
+    width: 100%;
 }
 
 .attribution a {
     color: var(--white-color);
     font-weight: 900;
+    
 }
 .attribution a:hover{
     text-decoration: underline;
     color: var(--green-color);
+}
+
+@media (max-width:375px) {
+    body{
+        min-height: 85vh;
+    }
+    .attribution{
+        margin: auto 5rem;
+    }
 }
